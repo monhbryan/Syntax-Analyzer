@@ -1,0 +1,112 @@
+BEGINNING OF SYNTAX ANALYZER
+
+Token: IDENTIFIER  || Lexeme: x
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+   <Statement> -> <Assign> 
+   <Assign> -> <ID> = <Expression> 
+   <ID> -> id 
+Character count#: 0 error:  Expected <Declarative>
+
+Token: OPERATOR    || Lexeme: =
+
+Token: IDENTIFIER  || Lexeme: a
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: OPERATOR    || Lexeme: +
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> +<Term><ExpressionPrime> || -<Term><ExpressionPrime>
+
+Token: IDENTIFIER  || Lexeme: b
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: SEPARATOR   || Lexeme: ;
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> epsilon 
+
+Token: IDENTIFIER  || Lexeme: z
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+   <Statement> -> <Assign> 
+   <Assign> -> <ID> = <Expression> 
+   <ID> -> id 
+Character #: 6 error:  Expected <Declarative>
+
+Token: OPERATOR    || Lexeme: =
+
+Token: IDENTIFIER  || Lexeme: c
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: OPERATOR    || Lexeme: +
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> +<Term><ExpressionPrime> || -<Term><ExpressionPrime>
+
+Token: IDENTIFIER  || Lexeme: d
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: SEPARATOR   || Lexeme: ;
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> epsilon 
+
+Token: IDENTIFIER  || Lexeme: a
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+   <Statement> -> <Assign> 
+   <Assign> -> <ID> = <Expression> 
+   <ID> -> id 
+Character #: 12 error:  Expected <Declarative>
+
+Token: OPERATOR    || Lexeme: =
+
+Token: IDENTIFIER  || Lexeme: e
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: OPERATOR    || Lexeme: -
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> +<Term><ExpressionPrime> || -<Term><ExpressionPrime>
+
+Token: IDENTIFIER  || Lexeme: f
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: SEPARATOR   || Lexeme: ;
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> epsilon 
+
+Token: IDENTIFIER  || Lexeme: b
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+   <Statement> -> <Assign> 
+   <Assign> -> <ID> = <Expression> 
+   <ID> -> id 
+Character #: 18 error:  Expected <Declarative>
+
+Token: OPERATOR    || Lexeme: =
+
+Token: IDENTIFIER  || Lexeme: g
+   <Expression > -> <Term> <ExpressionPrime>
+   <Term> -> <Factor> <TermPrime>
+   <Factor> -> id 
+
+Token: OPERATOR    || Lexeme: *
+   <TermPrime> -> *<TermPrime> | /<TermPrime> 
+
+Token: IDENTIFIER  || Lexeme: n
+   <Factor> -> id 
+
+Token: SEPARATOR   || Lexeme: ;
+   <TermPrime> -> epsilon 
+   <ExpressionPrime> -> epsilon 
+END OF SYNTAX ANALYZER
